@@ -188,8 +188,7 @@ for i in range(1,101):
         print(i)
         break
 
-
-#xndir25
+'''#xndir25
 #tarberak1
 i = int(input("Enter a number: "))
 sum = 0
@@ -205,7 +204,7 @@ while True:
     if x <0:
         break
     s+=x
-print(s)
+print(s)'''
 
 #xndir27
 
@@ -243,3 +242,84 @@ for i in range(1,n+1):
     if i % 3 ==0 and i % 5 == 0:
         continue
     print(i)
+
+
+# #xndir31
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+if a>b:
+    print("a is max")
+elif b>a:
+    print("b is max")
+else:
+    print("a=b")
+
+# #xndir34
+numbers = [12,43,54,56,55,35,23,55,67,65,1,4,2234,766,455]
+
+for number in numbers:
+    if 10 <= number <= 99 and number % 10 == 5:
+        print(number)
+
+
+#xndir35
+sum = 0
+
+while True:
+    number = int(input("Enter a number: "))
+    if number < 0:
+        break
+    sum += number
+
+print(sum)
+
+#xndir36
+count = 0
+
+while True:
+    number = int(input("Enter a number: "))
+    if number == 0:
+        break
+    count += 1
+
+print(count)
+
+#xndir37
+secret = 7
+
+while True:
+    tiv = int(input("Gushakir tivy: "))
+    if tiv == secret:
+        print("Gushakel es")
+        break
+
+    print("Pordzir krkin")
+
+#xndir 38
+sum = 0
+count = 0
+
+while True:
+    number = int(input("Enter a number: "))
+    if number < 0:
+        break
+    sum += number
+    count += 1
+
+print(sum/count)
+
+#xndir 41
+
+max_number = None
+
+while True:
+    number = int(input("Enter a number: "))
+    if number < 0:
+        break
+    if max_number is None or number > max_number:
+        max_number = number
+
+
+print(max_number)
